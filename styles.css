@@ -1,0 +1,220 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #faf3e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+header .logo {
+  font-family: "Bodoni Moda", serif;
+  font-size: 54px;
+  font-weight: bold;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  margin-right: 15px;
+}
+header a {
+  text-decoration: none;
+  color: #333;
+}
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 20px;
+  background-color: #001d4a;
+  color: #faf3e0;
+}
+
+.hero-text {
+  flex: 1;
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-family: "Bodoni Moda", serif;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #39ff14; /* Neon Green */
+  color: #001d4a; /* Midnight Blue */
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.hero-image {
+  flex: 1;
+  max-width: 50%;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  /* Add parallax effect here with JavaScript later */
+}
+.featured-collection {
+  padding: 60px 20px;
+  background-color: #faf3e0; /* Soft Cream */
+}
+
+.featured-collection h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 40px;
+}
+
+.art-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.art-item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.art-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.art-item:hover img {
+  transform: scale(1.1);
+}
+
+.art-info {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+.art-info h3,
+.art-info p {
+  margin: 0;
+}
+.virtual-exhibition {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #b40060; /* Rich Magenta */
+  color: white;
+}
+
+.exhibition-slider {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.exhibition-slider .slide {
+  margin: 20px 0;
+}
+
+.exhibition-slider img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.cta-button {
+  margin-top: 20px;
+  background-color: #39ff14; /* Neon Green */
+  color: #001d4a; /* Midnight Blue */
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.events {
+  padding: 60px 20px;
+  background-color: #001d4a; /* Midnight Blue */
+  color: #faf3e0; /* Soft Cream */
+}
+
+.events h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 40px;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.event {
+  background-color: #39ff14; /* Neon Green */
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.event p {
+  margin: 10px 0;
+}
+
+.event-date {
+  font-size: 1.2rem;
+}
+
+.event-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.about {
+  padding: 60px 20px;
+  background-color: #faf3e0; /* Soft Cream */
+  color: #001d4a; /* Midnight Blue */
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.footer {
+  padding: 40px 20px;
+  background-color: #001d4a; /* Midnight Blue */
+  color: #faf3e0; /* Soft Cream */
+  text-align: center;
+}
+
+.footer .contact-info p {
+  margin: 5px 0;
+}
+
+.footer .social-links a {
+  margin: 0 10px;
+  color: #faf3e0;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.footer ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
