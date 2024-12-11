@@ -243,7 +243,7 @@ header nav ul li a:hover {
 
 p a {
   color: #faf3e0;
-  text-decoration: none;
+  text-decoration: underline;
   font-size: 1.2rem;
   transition: color 0.3s ease, text-shadow 0.3s ease;
 }
@@ -308,4 +308,43 @@ p a:hover {
 .footer ul li a:hover {
   color: #50c878;
   text-shadow: 0px 0px 5px rgba(57, 255, 20, 0.6);
+}
+.gallery-hero {
+  background: url("images/virtual/hero-bg.jpg") no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.gallery-hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.virtual-hero {
+  background: url("images/virtual/hero-bg.jpg") no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.virtual-hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+.virtual-hero-cta-button {
+  background-color: #50c878;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.virtual-hero-cta-button:hover {
+  background-color: #b40060;
 }
