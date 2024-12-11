@@ -91,7 +91,7 @@ header nav ul li a:hover {
   margin-bottom: 20px;
 }
 
-.cta-button {
+.hero-cta-button {
   background-color: #50c878;
   color: #001d4a;
   padding: 10px 20px;
@@ -181,7 +181,7 @@ header nav ul li a:hover {
   object-fit: cover;
 }
 
-.cta-button {
+.virtual-cta-button {
   margin-top: 20px;
   background-color: #50c878;
   color: #001d4a;
@@ -228,6 +228,19 @@ header nav ul li a:hover {
   font-size: 1.5rem;
   font-weight: bold;
 }
+
+.event-cta-button {
+  margin-top: 20px;
+  margin-left: 50px;
+  background-color: #50c878;
+  color: #001d4a;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  justify-content: center;
+}
+
 .about {
   padding: 60px 20px;
   background-color: #faf3e0;
