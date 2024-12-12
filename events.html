@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARTEVUE Gallery</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="logo">ARTEVUE</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="virtual.html">Virtual Exhibition</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Page Title -->
+      <section class="events-hero">
+        <h1>Upcoming Events</h1>
+        <p>Discover and RSVP for our exciting upcoming events.</p>
+      </section>
+      <!-- Events Listings -->
+      <section class="events-list">
+        <div class="event">
+          <img src="images/event1.jpg" alt="Event 1" />
+          <div class="event-details">
+            <h2>Abstract Art Night</h2>
+            <p>Date: January 20, 2024</p>
+            <p>Time: 6:00 PM - 9:00 PM</p>
+            <p>Location: ARTEVUE Gallery, New York</p>
+            <p>
+              Join us for an evening exploring abstract art by renowned artists,
+              featuring live discussions and performances.
+            </p>
+            <button class="rsvp-button" onclick="showRSVPForm()">
+              RSVP Now
+            </button>
+          </div>
+        </div>
+        <div class="event">
+          <img src="images/event2.jpg" alt="Event 2" />
+          <div class="event-details">
+            <h2>Virtual Artist Meetup</h2>
+            <p>Date: February 5, 2024</p>
+            <p>Time: 4:00 PM - 6:00 PM</p>
+            <p>Location: Online (Zoom)</p>
+            <p>
+              A chance to meet and interact with artists from around the world
+              through our virtual platform.
+            </p>
+            <button class="rsvp-button" onclick="showRSVPForm()">
+              RSVP Now
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- RSVP Form -->
+      <section id="rsvp-form" class="rsvp-section hidden">
+        <h2>RSVP for an Event</h2>
+        <form>
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="event">Select Event:</label>
+          <select id="event" name="event" required>
+            <option value="Abstract Art Night">Abstract Art Night</option>
+            <option value="Virtual Artist Meetup">Virtual Artist Meetup</option>
+          </select>
+
+          <button type="submit" class="submit-button">Submit RSVP</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 ARTEVUE Art Gallery. All rights reserved.</p>
+        <div class="contact-info">
+          <p>Email: contact@artevue.com</p>
+          <p>Phone: (123) 456-7890</p>
+        </div>
+        <div class="social-links">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">Twitter</a>
+        </div>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>
