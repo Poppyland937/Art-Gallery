@@ -438,3 +438,67 @@ p a:hover {
   text-align: center;
   font-style: italic;
 }
+
+.events-hero {
+  text-align: center;
+  padding: 20px;
+  background-color: #faf3e0;
+  color: #001d4a;
+}
+
+.events-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.event {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.event img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.event-details h2 {
+  color: #b40060;
+}
+
+.rsvp-button {
+  background-color: #50c878;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.rsvp-button:hover {
+  background-color: #b40060;
+}
+
+.rsvp-section {
+  padding: 20px;
+  background-color: #faf3e0;
+  text-align: center;
+  display: none;
+}
+
+.rsvp-section form {
+  display: grid;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}
