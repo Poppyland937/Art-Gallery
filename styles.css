@@ -310,15 +310,21 @@ p a:hover {
   text-shadow: 0px 0px 5px rgba(57, 255, 20, 0.6);
 }
 .gallery-hero {
-  background: url("images/virtual/hero-bg.jpg") no-repeat center center/cover;
+  background: url("images/gallery/gallery-hero.jpg") no-repeat center
+    center/cover;
   color: #fff;
   text-align: center;
   padding: 100px 0;
+  margin-bottom: 40px;
 }
 
 .gallery-hero-text h1 {
   font-size: 3rem;
   margin-bottom: 20px;
+}
+.gallery-hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
 }
 .virtual-hero {
   background: url("images/virtual/hero-bg.jpg") no-repeat center center/cover;
@@ -332,7 +338,7 @@ p a:hover {
   font-size: 3rem;
   margin-bottom: 20px;
 }
-.hero-text p {
+.virtual-hero-text p {
   font-size: 1.2rem;
   margin-bottom: 30px;
 }
@@ -453,16 +459,17 @@ p a:hover {
   padding: 20px;
 }
 
-.event {
+.art-events {
   display: flex;
   align-items: center;
   gap: 20px;
   padding: 15px;
   border: 1px solid #ccc;
   border-radius: 10px;
+  background-color: #50c878;
 }
 
-.event img {
+.art-events img {
   width: 200px;
   height: auto;
   border-radius: 10px;
@@ -570,4 +577,134 @@ p a:hover {
 .team-member p {
   font-size: 1rem;
   color: #333;
+}
+
+.contact-hero {
+  background-color: #b40060;
+  color: #faf3e0;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.contact-hero h1 {
+  font-size: 2.5rem;
+}
+
+.contact-hero p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.contact-form-section {
+  background-color: #faf3e0;
+  padding: 2rem 1rem;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: bold;
+  margin-top: 1rem;
+  color: #001d4a;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact-form .submit-button {
+  background-color: #50c878;
+  color: #faf3e0;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form .submit-button:hover {
+  background-color: #b40060;
+}
+
+.contact-info {
+  background-color: #001d4a;
+  color: #faf3e0;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.info-item h3 {
+  color: #50c878;
+}
+
+.map-section {
+  padding: 2rem 1rem;
+}
+
+.map-section iframe {
+  border-radius: 10px;
+}
+.virtual-exhibition {
+  background-color: #b40060;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.virtual-exhibition h2 {
+  color: #faf3e0;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.exhibition-slider {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  justify-content: center;
+}
+
+.slides {
+  overflow: hidden;
+  border: 2px solid #50c878;
+  border-radius: 10px;
+}
+
+.slides img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.slides:hover img {
+  transform: scale(1.05);
+}
+.gallery-hero-cta-button {
+  background-color: #50c878;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.gallery-hero-cta-button:hover {
+  background-color: #b40060;
 }
