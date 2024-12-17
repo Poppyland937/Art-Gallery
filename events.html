@@ -102,7 +102,7 @@
         </div>
       </section>
 
-      <section id="rsvp-form" class="rsvp-forms">
+      <section id="rsvpForm" class="rsvp-forms">
         <div class="container">
           <h2>RSVP for an Event</h2>
           <form>
@@ -152,15 +152,16 @@
       </div>
     </footer>
     <script>
-      function showRSVPForm() {
-        const rsvpSection = document.getElementById("rsvp-form");
-        if (rsvpSection) {
-          rsvpSection.classList.toggle("hidden");
-          console.log("RSVP form toggled.");
-        } else {
-          console.error("RSVP form not found!");
-        }
-      }
+      document
+        .getElementById("rsvpForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          const name = document.getElementById("name").value;
+          const selectedEvent = document.getElementById("event").value;
+          alert(
+            `Thank you, ${name}, for RSVPing to the ${selectedEvent} event!`
+          );
+        });
     </script>
   </body>
 </html>
