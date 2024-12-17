@@ -41,9 +41,7 @@
               Join us for an evening exploring abstract art by renowned artists,
               featuring live discussions and performances.
             </p>
-            <button class="rsvp-button" onclick="showRSVPForm()">
-              RSVP Now
-            </button>
+            <button class="rsvp-button">RSVP Now</button>
           </div>
         </div>
         <div class="art-events">
@@ -57,9 +55,7 @@
               A chance to meet and interact with artists from around the world
               through our virtual platform.
             </p>
-            <button class="rsvp-button" onclick="showRSVPForm()">
-              RSVP Now
-            </button>
+            <button class="rsvp-button">RSVP Now</button>
           </div>
         </div>
         <div class="art-events">
@@ -73,9 +69,7 @@
               A chance to meet, interact and wine with fellow art lovers. Come
               pair good wine with great art.
             </p>
-            <button class="rsvp-button" onclick="showRSVPForm()">
-              RSVP Now
-            </button>
+            <button class="rsvp-button">RSVP Now</button>
           </div>
         </div>
         <div class="art-events">
@@ -89,9 +83,7 @@
               Come meet with renowned artist Sophie Bennett for an interative
               workshop you'll never forget.
             </p>
-            <button class="rsvp-button" onclick="showRSVPForm()">
-              RSVP Now
-            </button>
+            <button class="rsvp-button">RSVP Now</button>
           </div>
         </div>
         <div class="art-events">
@@ -105,30 +97,40 @@
               Join artist Ezra Collins on an insightful talk about the emerging
               trends in contemporary art.
             </p>
-            <button class="rsvp-button" onclick="showRSVPForm()">
-              RSVP Now
-            </button>
+            <button class="rsvp-button">RSVP Now</button>
           </div>
         </div>
       </section>
 
-      <section id="rsvp-form" class="rsvp-section hidden">
-        <h2>RSVP for an Event</h2>
-        <form>
-          <label for="name">Your Name:</label>
-          <input type="text" id="name" name="name" required />
+      <section id="rsvp-form" class="rsvp-forms">
+        <div class="container">
+          <h2>RSVP for an Event</h2>
+          <form>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required />
 
-          <label for="email">Your Email:</label>
-          <input type="email" id="email" name="email" required />
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required />
 
-          <label for="event">Select Event:</label>
-          <select id="event" name="event" required>
-            <option value="Abstract Art Night">Abstract Art Night</option>
-            <option value="Virtual Artist Meetup">Virtual Artist Meetup</option>
-          </select>
+            <label for="event">Select Event:</label>
+            <select id="event" name="event" required>
+              <option value="Select Option">Select Option</option>
+              <option value="Abstract Art Night">Abstract Art Night</option>
+              <option value="Virtual Artist Meetup">
+                Virtual Artist Meetup
+              </option>
+              <option value="Art and Wine Evening">Art and Wine Evening</option>
+              <option value="Interactive Art Workshop">
+                Interactive Art Workshop
+              </option>
+              <option value="Artist Talk: Emerging Trends in Contemporary Art">
+                Artist Talk: Emerging Trends in Contemporary Art
+              </option>
+            </select>
 
-          <button type="submit" class="submit-button">Submit RSVP</button>
-        </form>
+            <button type="submit" class="submit-button">Submit RSVP</button>
+          </form>
+        </div>
       </section>
     </main>
     <footer class="footer">
