@@ -34,9 +34,9 @@
           <img src="images/events/event1.jpg" alt="Event 1" />
           <div class="event-details">
             <h2>Abstract Art Night</h2>
-            <p>Date: January 20, 2024</p>
+            <p>Date: 20 January 2024</p>
             <p>Time: 6:00 PM - 9:00 PM</p>
-            <p>Location: ARTEVUE Gallery, New York</p>
+            <p>Location: ARTEVUE Gallery, London</p>
             <p>
               Join us for an evening exploring abstract art by renowned artists,
               featuring live discussions and performances.
@@ -50,12 +50,60 @@
           <img src="images/events/event2.jpg" alt="Event 2" />
           <div class="event-details">
             <h2>Virtual Artist Meetup</h2>
-            <p>Date: February 5, 2024</p>
+            <p>Date: 5 February 2024</p>
             <p>Time: 4:00 PM - 6:00 PM</p>
             <p>Location: Online (Zoom)</p>
             <p>
               A chance to meet and interact with artists from around the world
               through our virtual platform.
+            </p>
+            <button class="rsvp-button" onclick="showRSVPForm()">
+              RSVP Now
+            </button>
+          </div>
+        </div>
+        <div class="art-events">
+          <img src="images/events/event2.jpg" alt="Event 2" />
+          <div class="event-details">
+            <h2>Art and Wine Evening</h2>
+            <p>Date: 20 January 2024</p>
+            <p>Time: 4:00 PM - 6:00 PM</p>
+            <p>Location: ARTEVUE Gallery, London</p>
+            <p>
+              A chance to meet, interact and wine with fellow art lovers. Come
+              pair good wine with great art.
+            </p>
+            <button class="rsvp-button" onclick="showRSVPForm()">
+              RSVP Now
+            </button>
+          </div>
+        </div>
+        <div class="art-events">
+          <img src="images/events/event2.jpg" alt="Event 2" />
+          <div class="event-details">
+            <h2>Interactive Art Workshop</h2>
+            <p>Date: 5 February 2025</p>
+            <p>Time: 5:00 PM - 8:00 PM</p>
+            <p>Location: ARTEVUE Gallery, London</p>
+            <p>
+              Come meet with renowned artist Sophie Bennett for an interative
+              workshop you'll never forget.
+            </p>
+            <button class="rsvp-button" onclick="showRSVPForm()">
+              RSVP Now
+            </button>
+          </div>
+        </div>
+        <div class="art-events">
+          <img src="images/events/event2.jpg" alt="Event 2" />
+          <div class="event-details">
+            <h2>Artist Talk: Emerging Trends in Contemporary Art</h2>
+            <p>Date: 18 March 2025</p>
+            <p>Time: 4:00 PM - 7:00 PM</p>
+            <p>Location: ARTEVUE Gallery, London</p>
+            <p>
+              Join artist Ezra Collins on an insightful talk about the emerging
+              trends in contemporary art.
             </p>
             <button class="rsvp-button" onclick="showRSVPForm()">
               RSVP Now
@@ -72,6 +120,7 @@
 
           <label for="email">Your Email:</label>
           <input type="email" id="email" name="email" required />
+
           <label for="event">Select Event:</label>
           <select id="event" name="event" required>
             <option value="Abstract Art Night">Abstract Art Night</option>
@@ -100,6 +149,16 @@
         </ul>
       </div>
     </footer>
-    <script src="scripts.js"></script>
+    <script>
+      function showRSVPForm() {
+        const rsvpSection = document.getElementById("rsvp-form");
+        if (rsvpSection) {
+          rsvpSection.classList.toggle("hidden");
+          console.log("RSVP form toggled.");
+        } else {
+          console.error("RSVP form not found!");
+        }
+      }
+    </script>
   </body>
 </html>
